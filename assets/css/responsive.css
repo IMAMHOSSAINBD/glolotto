@@ -1,0 +1,148 @@
+@media (max-width: 575.99px) {
+    .section-2 select {
+        width: 200px;
+    }
+
+    .section-2 input {
+        width: 200px;
+    }
+
+    span.gennum {
+        width: 1.2rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        margin: 0.2rem;
+    }
+
+    .section-2 p.text-Blue.lotsrttxt {
+        font-size: 1rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 414px) {
+    nav.navbar.navbar-expand-bg.navbar-dark.danger-deep.sticky-top {
+        padding: .2rem;
+    }
+
+    span.gennum {
+        width: 1rem;
+        height: 1.2rem;
+        font-size: .8rem;
+        margin: 0.1rem;
+    }
+
+    h5.text-dark.last2d.text-center.p-2 {
+        font-size: 1rem;
+    }
+
+    img.img-fluid.paypic {
+        width: 7rem;
+        margin: 0px auto;
+        height: 4rem;
+        margin-bottom: .5rem;
+    }
+
+    .lot-box {
+        width: 90%;
+    }
+}
+
+@media (min-aspect-ratio:16/9) {
+    #videobg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    #videobg {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+/* ========================== */
+/* Responsive */
+/* ========================== */
+
+@media (max-width: 992px) {
+    .table-content {
+        width: 60%;
+
+    }
+}
+
+@media (max-width: 991.99px) {
+    .table-content {
+        width: 60%;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .table-content {
+        width: 70%;
+
+    }
+}
+
+@media (max-width: 767.99px) {
+    .table-content {
+        width: 70%;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .table-content {
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 575.99px) {
+    nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+
+    }
+
+    .rightlinks {
+        margin: auto;
+    }
+
+    .lotrslt {
+        margin: .5rem;
+    }
+
+
+    .table th,
+    .table td {
+        padding: .2rem;
+    }
+
+    .table-content {
+        font-weight: normal;
+
+    }
+
+    /*
+    span.gennum {
+        
+    }
+*/
+}
+
+@media (max-width: 320px) {
+    .table-content {
+        width: 100%;
+
+    }
+}

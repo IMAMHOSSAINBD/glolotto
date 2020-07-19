@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Go Lotto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="text-dark">
+    <!-- #wrapper -->
+    <div class="wrapper" id="wraper">
+        <!-- Bootstrap NavBar -->
+        <nav class="navbar navbar-expand-bg navbar-dark danger-deep sticky-top">
+            <div class="collapsbtn">
+                <button class="navbar-col btn text-light" id="sd">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="logo d-none d-md-block">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/GLO-lotto-logo.png" alt="" class="img-fluid logo d-none d-md-block align-top"></a>
+                <!--{{url('/')}} -->
+            </div>
+            <div class="rightlinks">
+                <a class="btn text-light regbtn deep-bg" href="register.html"><i class="fas fa-user-plus mr-1 text-warning"></i>Register now</a> <!-- {{url('/register')}} -->
+
+                <a class="btn text-light logbtn deep-bg btn-link text-decoration-none" href="login.html">Login</a> <!-- {{url('/login')}} -->
+
+                <button class="btn text-light langbtn deep-bg"><i class="fas fa-globe-asia mr-1 text-light"></i>TH</button>
+            </div>
+            <div class="d-block d-md-none  mx-auto">
+                <a href="index.html">
+                    <img src="assets/img/GLO-lotto-logo.png" alt="" class="img-fluid logo d-block d-md-none mx-auto my-2 align-top">
+                </a>
+            </div>
+
+
+
+
+
+        </nav>
+
+        <div class="lsidebar closed  mbs" id="sidebarl">
+            <div class="sb-box py-4">
+                <div class="img-area">
+                    <a href="index.html"><img src="assets/img/glpic-new.png" alt="" class="img-fluid glimg"></a>
+
+                </div>
+                <button id="cl" class="btn btn-lg "><i class="fas fa-times"></i></button>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a class="sidebarlink" href="index.html"><i class="fas fa-home mr-2"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" data-toggle="collapse" aria-expanded="false" class="dropdown-toggles collapsed sidebarlink"> <span><i class="fas fa-address-card mr-2"></i></span> About
+                            <span class="ml-5"><i class="fas fa-sort-down"></i></span>
+
+                        </a>
+
+                        <ul class="list-unstyled collapse" id="about" style="">
+                            <li>
+                                <a href="aboutUs.html"> <span class="text-light"><i class="fas fa-users fa-sm"></i></span> About Us</a>
+                            </li>
+                            <li>
+                                <a href="vission.html"><span class="text-light"><i class="fas fa-bullseye fa-sm"></i></span> Vission Mission</a>
+                            </li>
+                            <li>
+                                <a href="productionProcess.html"><span class="text-light"><i class="fas fa-recycle fa-sm"></i></span> Production Process</a>
+                            </li>
+
+
+
+                        </ul>
+
+
+                    </li>
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggles collapsed sidebarlink"> <span><img src="assets/img/sss.png" width="8%" class="img-fluid" alt=""></span> Lottery
+                            <span class="ml-5"><i class="fas fa-sort-down"></i></span>
+
+                        </a>
+
+                        <ul class="list-unstyled collapse" id="homeSubmenu" style="">
+                            <li>
+                                <a href="honoi-lottery.html"> <span class="text-light"><i data-brackets-id="7423" class="far fa-star fa-sm"></i></span> Honoi Lottery</a>
+                            </li>
+                            <li>
+                                <a href="laos-lottery.html"><span class="text-light"><i data-brackets-id="7423" class="far fa-star fa-sm"></i></span> Laos Lottery</a>
+                            </li>
+                            <li>
+                                <a href="malaysian.html"><span class="text-light"><i data-brackets-id="7423" class="far fa-star fa-sm"></i></span> Malaysian Lottery</a>
+                            </li>
+
+                            <li>
+                                <a href="yiki-lottery.html"><span class="text-light"><i data-brackets-id="7423" class="far fa-star fa-sm"></i></span> Yi Ki Lottery</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebarlink" href="result.html"><i class="fas fa-poll-h mr-2 fa-sm"></i>Results</a>
+                    </li>
+
+                </ul>
+                <div class="gl-logo-area mt-4 text-center">
+                    <a href="index.html"><img src="assets/img/logoWithTittle.png" alt="" width="50%" class="img-fluid gllogo mx-auto"></a>
+
+
+                </div>
+            </div>
+        </div>
+        <!---------------------------main body will go here------------------------------------->
+
+
+        <div class="main-body bg-dark text-light reg-form">
+
+            <div class="container">
+                <h4 class="pt-2 pb-2">Register with us</h4>
+                <div class="text-center reg-top">
+                    <h1 class="py-2 mb-0 bg-lightBlue">
+                        Membership Application Form
+                    </h1>
+                    <p class="bg-gray text-dark font-weight-bold p-3">The instruction must be filled out completely</p>
+                </div>
+
+                <div class="reg-form-content">
+                    <form class=" text-center rs-from">
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3 pxbox">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text p-0" id="inputGroupPrepend2">
+                                            <select id="inputState" class="form-control">
+                                                <option value="TL" selected> &#127987; Thailand</option>
+                                                <option value="DE"> &#127987; Germany</option>
+                                                <option value="FR"> &#127987; France</option>
+                                                <option value="ES"> &#127987; Spain</option>
+                                            </select>
+                                        </span>
+                                    </div>
+
+                                    <input type="text" class="form-control" id="validationDefaultUsername" placeholder="*Phone Number" aria-describedby="inputGroupPrepend2" required>
+
+                                </div>
+                                <i class="fas fa-phone ic"></i>
+                            </div>
+
+                            <div class="col-md-12 mb-1 psbox">
+                                <div class="row">
+                                    <div class="col-md-6 mb-2">
+                                        <input type="password" class="form-control" id="validationDefault03" placeholder="* Enter Password at leas 8 characters" required>
+                                        <a href="" class="text-dark show-pass" onclick="sPass()"></a>
+                                        <i class="fas fa-eye ic mr-4"></i>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <input type="password" class="form-control" id="validationDefault04" placeholder="* Confrim Password" required>
+                                        <a href="" class="text-dark show-pass" onclick="sPass2()"></a>
+                                        <i class="fas fa-eye ic mr-4"></i>
+                                        <span class="text-muted">(pleanse enter a password at least 8 charecters)</span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--
+                            <div class="col-md-12 mb-3 psbox">
+                                <input type="password" class="form-control" id="validationDefault04" placeholder="* Confrim Password" required>
+                                <a href="" class="text-dark show-pass" onclick="sPass2()"></a>
+                                <i class="fas fa-eye ic"></i>
+                                <span>(pleanse enter a password at least 8 charecters)</span>
+                            </div>
+-->
+
+                            <div class="col-md-12 mb-3">
+                                <input type="text" class="form-control" id="validationDefault01" placeholder="*Username" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <input type="text" class="form-control" id="validationDefault02" placeholder="*Name" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="row">
+                                    <div class="col-md-6 mb-2">
+                                        <select id="inputgender" class="form-control">
+                                            <option selected>&#9893; Gender</option>
+                                            <option>&#9794; Male</option>
+                                            <option>&#9792; Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-2">
+                                        <input type="date" class="form-control" id="validationDefault9" placeholder="*Date of Birth" required>
+                                        <i class="fas fa-gift ic d-none"></i>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!--
+                            <div class="col-md-12 mb-3 psbox">
+                                <input type="date" class="form-control" id="validationDefault9" placeholder="*Date of Birth" required>
+                                <i class="fas fa-gift ic"></i>
+                            </div>
+-->
+                            <div class="col-md-12 mb-3 psbox">
+                                <input type="email" class="form-control" id="validationDefault10" placeholder="*Email" required>
+                                <i class="fas fa-envelope ic ml-4"></i>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend5">
+                                            Select Country
+                                        </span>
+                                    </div>
+                                    <select id="inputcountry" class="form-control" name="inputcountry" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+                                        <option selected>Select Country</option>
+                                        <option value="0">Thailand &#127987;</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div id="thailandContend" style="display: none;">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-3">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control" id="validationDefault04" placeholder="*Bank Name" required>
+                                                </div>
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control" id="validationDefault05" placeholder="*Account Name" required>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 ">
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control" id="validationDefault06" placeholder="*Account Number" required>
+                                                </div>
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control" id="validationDefault07" placeholder="*Passport Or account Verification  image" required>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12 mb-3 psbox">
+                                <input type="text" class="form-control" id="validationDefault08" placeholder="*Refferal" required>
+                                <i class="fas fa-user-friends ic"></i>
+                            </div>
+
+
+                            <!--
+                            <div class="form-group col-12 col-md-12 ">
+                                <h6 class="text-dark bg-white p-2 w-75 mx-auto"><i class="fas fa-check-circle text-success mr-3"></i>* I accept the terms & conditions</h6>
+                            </div>
+-->
+
+
+                            <div class="bg-white text-dark pt-2 pb-2 pl-4 pr-4 mb-4 text-center mx-auto accept-terms d-block">
+                                <div class="form-group form-check mb-0 ">
+                                    <input type="checkbox" class="form-check-input" id="check">
+                                    <label for="check" class="form-check-label">I accept the terms & conditions</label>
+                                </div>
+                            </div>
+                            <div class="text-center d-block w-100 mb-4">
+
+                                <a class="btn bg-lightBlue text-white font-weight-bold pt-3 pb-3 pl-4 pr-4" type="submit" href="{{url('/rs')}}"><i class="fas fa-sign-out-alt mr-2"></i>Submit form</a>
+
+
+
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!---------------------------main body will go here------------------------------------->
+
+
+        <section class="chatbot-sec wow bounceInUp " data-wow-duration="2s" data-wow-delay="5s">
+            <div class="chatbot " id="chatbot">
+                <img src="assets/img/chatbot-banner.jfif" class="img-fluid" alt="">
+
+                <div class="icon-minimize">
+                    <button class="btn text-light" onclick="hideFunction()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="chatbot-msg">
+                    <form action="">
+
+                        <form>
+                            <div class=" align-items-center d-flex ">
+                                <div class="">
+
+                                    <input type="text" class="form-control " id="inlineFormInputName" placeholder="Type your message here">
+                                </div>
+
+                                <div class="">
+                                    <button type="submit" class="btn btn-light"> <i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!---------------------------section-footer------------------------------------->
+        <footer class="footer text-light text-center bg-deepl pt-3 pb-3" id="footer">
+            <div class="fpart">
+                <p class="text-light fptxt mb-1">Inquire about issues & service telephone number 02 026 3386 | line messenger id :</p>
+                <p class="text-light fptxt">@lplotto line messenger id: tpllotto</p>
+            </div>
+            <div class="mpart deep-bg pt-2 pb-2">
+                <div class="mp1 d-flex flex-wrap justify-content-center">
+                    <span class="mf mr-2">WE ACCEPT</span>
+                    <span class="mf"><img src="assets/img/payoneer.png" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/visa.png" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/paypic.png" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/mastercard.jpg" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/Skrill-1.jpg" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/American-Express.png" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/bank-icon.jpg" class="img-fluid paid"></span>
+                </div>
+                <div class="mp2 pt-2 d-flex flex-wrap justify-content-center">
+                    <span class="ftitem mx-2 my-1"><a href="register.html" class="text-light">Become a member</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Forgot Password</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Rules of play</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Frequently asked Question</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Diposit/Withdraw Money</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Help Cenbter</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Withdraw Money</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Questions </a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Money</a></span>
+                </div>
+                <p class="mt-1"><span><i class="fas fa-shield-alt"></i></span> <span class="font-weight-bold"> Secure website</span> 100% GUARANTEE</p>
+            </div>
+            <div class="lpart pt-3">
+                <span class="ftltext myt-3">&copy; All rights resereved <a href="https://glolotto.org/" class="text-decoration-none text-light" target="_blank">glolotto.org </a> 2020</span>
+            </div>
+            <button class="btn btn-lg btn-link btn-circle" href="#!" id="back-to-top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+
+
+        </footer>
+        <!---------------------------section-footer------------------------------------->
+    </div>
+    <!-- /#wrapper -->
+
+    <!--js link aria goes here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-4-autocomplete/dist/bootstrap-4-autocomplete.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/marquee.js"></script>
+    <script src="assets/js/app.js"></script>
+
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- WOW JS intialize -->
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <script type="text/javascript">
+        function show(aval) {
+            if (aval == "0") { //if 1 then show it
+
+                thailandContend.style.display = 'block';
+                Form.fileURL.focus();
+            } else { //for everything else hide it
+
+                thailandContend.style.display = 'none';
+            }
+        };
+
+
+        // Chatbot hide JS -->
+        function hideFunction() {
+            var x = document.getElementById("chatbot");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+    </script>
+</body></html>

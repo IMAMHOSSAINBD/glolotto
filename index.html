@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Go Lotto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="text-dark">
+    <!-- #wrapper -->
+    <div class="wrapper" id="wraper">
+        <!-- Bootstrap NavBar -->
+        <nav class="navbar navbar-expand-bg navbar-dark danger-deep sticky-top">
+            <div class="collapsbtn">
+                <button class="navbar-col btn text-light" id="sd">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="logo d-none d-md-block">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/GLO-lotto-logo.png" alt="" class="img-fluid logo d-none d-md-block align-top"></a>
+                <!--{{url('/')}} -->
+            </div>
+            <div class="rightlinks">
+                <a class="btn text-light regbtn deep-bg" href="register.html"><i class="fas fa-user-plus mr-1 text-warning"></i>Register now</a> <!-- {{url('/register')}} -->
+
+                <a class="btn text-light logbtn deep-bg btn-link text-decoration-none" href="login.html">Login</a> <!-- {{url('/login')}} -->
+
+                <button class="btn text-light langbtn deep-bg"><i class="fas fa-globe-asia mr-1 text-light"></i>TH</button>
+            </div>
+            <div class="d-block d-md-none  mx-auto">
+                <a href="index.html">
+                    <img src="assets/img/GLO-lotto-logo.png" alt="" class="img-fluid logo d-block d-md-none mx-auto my-2 align-top">
+                </a>
+            </div>
+
+
+
+
+
+        </nav>
+
+        <div class="lsidebar closed  mbs" id="sidebarl">
+            <div class="sb-box py-4">
+                <div class="img-area">
+                    <a href="index.html"><img src="assets/img/glpic-new.png" alt="" class="img-fluid glimg"></a>
+
+                </div>
+                <button id="cl" class="btn btn-lg "><i class="fas fa-times"></i></button>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a class="sidebarlink" href="index.html"><i class="fas fa-home mr-2"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" data-toggle="collapse" aria-expanded="false" class="dropdown-toggles collapsed sidebarlink"> <span><i class="fas fa-address-card mr-2"></i></span> About
+                            <span class="ml-5"><i class="fas fa-sort-down"></i></span>
+
+                        </a>
+
+                        <ul class="list-unstyled collapse" id="about" style="">
+                            <li>
+                                <a href="aboutUs.html"> <span class="text-light"><i class="fas fa-users fa-sm"></i></span> About Us</a>
+                            </li>
+                            <li>
+                                <a href="vission.html"><span class="text-light"><i class="fas fa-bullseye fa-sm"></i></span> Vission Mission</a>
+                            </li>
+                            <li>
+                                <a href="productionProcess.html"><span class="text-light"><i class="fas fa-recycle fa-sm"></i></span> Production Process</a>
+                            </li>
+
+
+
+                        </ul>
+
+
+                    </li>
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggles collapsed sidebarlink"> <span><img src="assets/img/sss.png" width="8%" class="img-fluid" alt=""></span> Lottery
+                            <span class="ml-5"><i class="fas fa-sort-down"></i></span>
+
+                        </a>
+
+                        <ul class="list-unstyled collapse" id="homeSubmenu" style="">
+                            <li>
+                                <a href="honoi-lottery.html"> <span class="text-light"><i data-brackets-id="7423" class="far fa-star fa-sm"></i></span> Honoi Lottery</a>
+                            </li>
+                            <li>
+                                <a href="laos-lottery.html"><span class="text-light"><i data-brackets-id="7423" class="far fa-star fa-sm"></i></span> Laos Lottery</a>
+                            </li>
+                            <li>
+                                <a href="malaysian.html"><span class="text-light"><i data-brackets-id="7423" class="far fa-star fa-sm"></i></span> Malaysian Lottery</a>
+                            </li>
+
+                            <li>
+                                <a href="yiki-lottery.html"><span class="text-light"><i data-brackets-id="7423" class="far fa-star fa-sm"></i></span> Yi Ki Lottery</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebarlink" href="result.html"><i class="fas fa-poll-h mr-2 fa-sm"></i>Results</a>
+                    </li>
+
+                </ul>
+                <div class="gl-logo-area mt-4 text-center">
+                    <a href="index.html"><img src="assets/img/logoWithTittle.png" alt="" width="50%" class="img-fluid gllogo mx-auto"></a>
+
+
+                </div>
+            </div>
+        </div>
+        <!---------------------------main body will go here------------------------------------->
+
+        <div class="main-body">
+            <!-----------------------------section1------------------------------->
+            <div class="pt-2 deep-bg " id="top">
+                <div class="container-fluid">
+                    <h4 class="p-1  text-light bg-deepl text-center mx-auto  ">
+                        <!--
+                    <marquee class="marquee ver" data-direction='down' behavior="" class="" scrolldelay="">
+                        Welcome Everyone To Golotto.com Website
+                    </marquee>
+-->
+                        <!--                    <div class="marquee ver" data-direction='down' data-duration=1000>Welcome Everyone To Golotto.com Website </div>-->
+
+                        <div class='marquee'> Welcome Everyone To Golotto.com Website.</div>
+
+                    </h4>
+                </div>
+
+                <div>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="assets/img/banner/banner%20(1).jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/banner/banner%20(1).png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/banner/banner%20(2).png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/banner/banner%20(3).png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/banner/banner%20(4).png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/banner/banner%20(5).png" class="d-block w-100" alt="...">
+                            </div>
+
+
+
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="register.html"><img src="assets/img/linkpic.gif" alt="" class="img-fluid linkpic pt-4"></a>
+
+                </div>
+
+            </div>
+
+            <!-----------------------------/section1--------------------------------->
+            <!------------------------------section2--------------------------------->
+            <div class="section-2 midpic">
+                <div>
+                    <video id="videobg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                        <source src="assets/img/midbg.mp4" type="video/mp4">
+                        <source src="movie.webm" type="video/webm">Sorry, your browser does not support HTML5 video.</video>
+
+
+                </div>
+                <div class="container">
+                    <div class="text-white p-2 mtext">
+                        <p class="font-weight-bold">Lottery Online, Easy to play, actually pays high, <span class="text-Blue">GLOTTO</span> lottery website</p>
+                        <p class="text-justify">
+                            <span class="font-weight-bold text-Blue">Online lottery</span>, playing lottery , online lottery betting the new system comes with a mordern system,easy to buy quick money transfer ,buy lottery tickets online here,pay highest give a lot of discount Total online lottery websites with all types of <span class="text-Blue">government </span>lottery players There are many betting options , <span class="text-Blue">laos</span> lottery that is availavle to play every wednesday , <span class="text-Blue">Hanoi</span> lottery and kyou availavle to play everyday . <a href="glolotto.com" class="text-Blue">Glolotto.com</a> online lottery works on cloud server that is guarenteed.No crashes ,Sure.1,000,000% safe.Open.get thai goverbnment lottery , Mlaysian lottery , Thai stock lottery , foreign stock lottery </p>
+                        <p class="text-justify">
+                            <span class="font-weight-bold d-block mb-2">Why choose to play lottery with us</span>
+                            The highlight of the <span class="text-Blue">Glolotto</span> online lottery website is the service for accepting lottery tickets ,. Financial stability , high pay, large discount, but with a higher pay rate . can bet anywhere, all the lottery devices on mobile Convenient and fast Accepting bookmarks, but on the 10th and 25th of every month . The bookmarks close. 15.30 hrs . of the lottery date . Comes with a maximum oayout rate of 900/130 baht per baht.30% discount.550/70 minimum bet is only 1 baht. No number. Unlimited, you can bet all samples fully. 24-hour deposit and withdrawal service
+                        </p>
+                    </div>
+
+                    <div class="lottgen p-2">
+                        <!--
+                        <div class="container">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="option-left-icon text-light">
+                                                <img src="assets/img/sss.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div>
+
+                                                <div class="form-group">
+
+                                                    <select id="inputState" class="form-control btn-deepl">
+                                                        <option selected>Choose...</option>
+                                                        <option>Honoi Lottery</option>
+                                                        <option>Laos Lottery</option>
+                                                        <option>Malaysian Lottery</option>
+                                                        <option>Yi Ki Lottery</option>
+
+
+                                                    </select>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="option-left-icon text-light">
+                                                <img src="assets/img/calendar.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div>
+
+                                                <div class="form-group">
+                                                    <input type="date" class="form-control btn-deepl" id="date">
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </form>
+                        </div>
+-->
+
+
+                        <hr>
+
+                        <div class="container">
+                            <form>
+                                <div class="form-row align-items-center">
+
+                                    <div class="col-md-6 m-auto">
+                                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend  ">
+                                                <div class="input-group-text danger-deep"><img src="assets/img/sss.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <select id="inputState" class="form-control btn-deepl">
+                                                <option selected>Choose...</option>
+                                                <option>Honoi Lottery</option>
+                                                <option>Laos Lottery</option>
+                                                <option>Malaysian Lottery</option>
+                                                <option>Yi Ki Lottery</option>
+
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row align-items-center">
+
+                                    <div class="col-md-6 m-auto">
+                                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text danger-deep"><img src="assets/img/calendar.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <input type="date" class="form-control btn-deepl">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="  lotrslt m-4 p-1 bg-lightGolden">
+                        <div class="bg-white m-2 py-2">
+                            <p class="text-Blue lotsrttxt">
+
+                                Government Lottery Results Reguler Installments for may 20,2020
+                            </p>
+                            <div class="draw lonum m-4">
+                                <h5 class="text-dark genhead text-center p-2">Award Results</h5>
+                                <div class="d-flex flex-wrap justify-content-stretch justify-content-center generatednum m-1 pb-1  big-num">
+                                    <span class="gennum big-num">0</span>
+                                    <span class="gennum">1</span>
+                                    <span class="gennum">2</span>
+                                    <span class="gennum ln1 text-info">3</span>
+                                    <span class="gennum ln2 text-success">4</span>
+                                    <span class="gennum ln3 text-success">5</span>
+                                </div>
+                                <h5 class="text-dark last2d text-center p-2">Last 2 Digits</h5>
+                                <div class="d-flex flex-wrap justify-content-stretch justify-content-center generatednum m-1 pb-1  big-num">
+                                    <span class="gennum text-danger">0</span>
+                                    <span class="gennum text-danger">1</span>
+                                </div>
+                                <div class="lpnum">
+                                    <div class="row">
+                                        <div class="col-6 pr-0 pl-0">
+                                            <h5 class="text-dark last2d text-center p-2">3 page number</h5>
+                                            <div class="d-flex flex-wrap justify-content-stretch justify-content-center m-1 pb-1">
+                                                <span class="gennum">0</span>
+                                                <span class="gennum">1</span>
+                                                <span class="gennum">1</span>
+                                            </div>
+                                            <div class="d-flex flex-wrap justify-content-stretch justify-content-center m-1 pb-1">
+                                                <span class="gennum">0</span>
+                                                <span class="gennum">1</span>
+                                                <span class="gennum">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pr-0 pl-0">
+                                            <h5 class="text-dark last2d text-center p-2">Last 3 Digits</h5>
+                                            <div class="d-flex flex-wrap justify-content-stretch justify-content-center m-1 pb-1">
+                                                <span class="gennum">0</span>
+                                                <span class="gennum">1</span>
+                                                <span class="gennum">1</span>
+                                            </div>
+                                            <div class="d-flex flex-wrap justify-content-stretch justify-content-center m-1 pb-1">
+                                                <span class="gennum">0</span>
+                                                <span class="gennum">1</span>
+                                                <span class="gennum">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------section2------------------------------------->
+            <!---------------------------section3------------------------------------->
+            <div class="section-3">
+                <div class="container">
+                    <div class="carousel-1 p-4">
+                        <div class="owl-carousel owl-carousel-1 owl-theme text-center">
+                            <div class="item">
+                                <div class="card mx-auto" style="width:20rem">
+                                    <img class="card-img-top" src="assets/img/sl1.png" alt="Card image">
+                                    <div class="card-body p-1">
+                                        <h6 class="card-title font-weight-bold">Government Lottery, Thai Government lottery easy to play lotto.com</h6>
+                                        <a href="#" class="btn btn-deepl btn-block">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------section3------------------------------------->
+            <!---------------------------section4------------------------------------->
+            <div class="section-4 text-white">
+                <div class="container">
+                    <div class="midtxt p-1">
+                        <h5 class="font-weight-bold">
+                            <span class="text-Blue">GLOLOTTO</span> online lottery, Easy play for Money
+                        </h5>
+                        <p class="text-white font-weight-bold">
+                            we want you and your friends to come and try . And try to experience the best online lottery websites right now we granteed that playing with you and your friends every time will be an investment.And see goodd profits
+                        </p>
+                        <p class="text-white font-weight-bold">
+                            You just have to register . will able to play via computer mobile is easy, convenient , fast and very fast,and then get ereal money as well. just invest a few dollar or baht but get a lot of profits back already .
+                        </p>
+                        <p class="text-white font-weight-bold">
+                            The more inviting friends to many people, the more fun it is to play even more. There are people who hope to go together and unfortunately become rich togather. Friends keep telling, or we tell friends about lucky numbers, famous numbers to shere .
+                        </p>
+                        <p class="text-white font-weight-bold">
+                            We therefore want you to invite a lot of friends , beacuse the more you play, the more fun and money. Andf make it more rich join to apply to us . <span class="text-Blue">GLOLOTTO</span> will take you to the global you are searchingg for
+                        </p>
+                    </div>
+                    <a href="register.html" class="btn btn-lg btn-block px-4">
+                        <img src="assets/img/regclick.png" alt="" class="img-fluid regclick">
+
+                    </a>
+                </div>
+            </div>
+            <!---------------------------section4------------------------------------->
+            <!---------------------------section5------------------------------------->
+            <div class="section-5">
+                <div class="container">
+                    <div class="caraousel-sec-2 p-3">
+                        <div class="owl-carousel owl-carousel-2 owl-theme text-center">
+                            <div class="item">
+                                <img src="assets/img/sl2.png" alt="" class="img-fuid sl2 mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <a href="register.html" class="btn btn-lg btn-block px-4">
+                        <span><img src="assets/img/people-icon.png" width="5%" class="img-fluid" alt=""></span>
+                        <img src="assets/img/olclick.gif" width="95%" alt="" class="img-fluid regclick">
+                    </a>
+-->
+                </div>
+            </div>
+            <!---------------------------section5------------------------------------->
+            <!---------------------------section6------------------------------------->
+            <div class="section-6 pb-4">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4 col-4 p-1">
+                            <img src="assets/img/pay1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 col-4 p-1">
+                            <img src="assets/img/pay2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 col-4 p-1">
+                            <img src="assets/img/pay3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 col-4 p-1">
+                            <img src="assets/img/pay4.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 col-4 p-1">
+                            <img src="assets/img/pay5.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 col-4 p-1">
+                            <img src="assets/img/pay6.png" alt="" class="img-fluid">
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------------------section6------------------------------------->
+        </div>
+
+
+
+
+
+
+        <!---------------------------main body will go here------------------------------------->
+
+
+
+        <section class="chatbot-sec wow bounceInUp " data-wow-duration="2s" data-wow-delay="5s">
+            <div class="chatbot " id="chatbot">
+                <img src="assets/img/chatbot-banner.jfif" class="img-fluid" alt="">
+
+                <div class="icon-minimize">
+                    <button class="btn text-light" onclick="hideFunction()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="chatbot-msg">
+                    <form action="">
+
+                        <form>
+                            <div class=" align-items-center d-flex ">
+                                <div class="">
+
+                                    <input type="text" class="form-control " id="inlineFormInputName" placeholder="Type your message here">
+                                </div>
+
+                                <div class="">
+                                    <button type="submit" class="btn btn-light"> <i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!---------------------------section-footer------------------------------------->
+        <footer class="footer text-light text-center bg-deepl pt-3 pb-3" id="footer">
+            <div class="fpart">
+                <p class="text-light fptxt mb-1">Inquire about issues & service telephone number 02 026 3386 | line messenger id :</p>
+                <p class="text-light fptxt">@lplotto line messenger id: tpllotto</p>
+            </div>
+            <div class="mpart deep-bg pt-2 pb-2">
+                <div class="mp1 d-flex flex-wrap justify-content-center">
+                    <span class="mf mr-2">WE ACCEPT</span>
+                    <span class="mf"><img src="assets/img/payoneer.png" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/visa.png" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/paypic.png" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/mastercard.jpg" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/Skrill-1.jpg" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/American-Express.png" class="img-fluid paid"></span>
+                    <span class="mf"><img src="assets/img/bank-icon.jpg" class="img-fluid paid"></span>
+                </div>
+                <div class="mp2 pt-2 d-flex flex-wrap justify-content-center">
+                    <span class="ftitem mx-2 my-1"><a href="register.html" class="text-light">Become a member</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Forgot Password</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Rules of play</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Frequently asked Question</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Diposit/Withdraw Money</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Help Cenbter</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Withdraw Money</a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Questions </a></span>
+                    <span class="ftitem mx-2 my-1"><a href="" class="text-light">Money</a></span>
+                </div>
+                <p class="mt-1"><span><i class="fas fa-shield-alt"></i></span> <span class="font-weight-bold"> Secure website</span> 100% GUARANTEE</p>
+            </div>
+            <div class="lpart pt-3">
+                <span class="ftltext myt-3">&copy; All rights resereved <a href="https://glolotto.org/" class="text-decoration-none text-light" target="_blank">glolotto.org </a> 2020</span>
+            </div>
+            <button class="btn btn-lg btn-link btn-circle" href="#!" id="back-to-top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+
+
+        </footer>
+        <!---------------------------section-footer------------------------------------->
+    </div>
+    <!-- /#wrapper -->
+
+    <!--js link aria goes here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-4-autocomplete/dist/bootstrap-4-autocomplete.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.3.1/jquery.marquee.min.js"></script>
+    <script>
+        //        $('.marquee').marquee();
+        // marquee
+        $(function() {
+            $('.marquee').marquee({
+                duration: 9000
+            });
+        });
+
+        // Back to top JS -->
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            $('#back-to-top').click(function() {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 300);
+                return false;
+            });
+
+            $('#back-to-top').tooltip('show');
+
+        });
+
+        // Chatbot hide JS -->
+        function hideFunction() {
+            var x = document.getElementById("chatbot");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+    </script>
+
+
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- WOW JS intialize -->
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="assets/js/app.js"></script>
+
+
+</body></html>
