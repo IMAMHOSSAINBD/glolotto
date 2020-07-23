@@ -67,6 +67,10 @@ h6 {
     background-color: black;
 }
 
+.text-black {
+    color: black;
+}
+
 .text-white {
     color: white;
 }
@@ -126,8 +130,9 @@ body *:focus {
 }
 
 .stroke-white {
-    -webkit-text-stroke: .5px;
+    -webkit-text-stroke: .3px;
     -webkit-text-stroke-color: white;
+
 }
 
 .deep-bg {
@@ -429,15 +434,16 @@ span.gennum {
 
 .big-num span {
     background-color: white;
-    margin: .5rem;
-    width: 3.5rem;
-    height: 2.5rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 2px solid #fff55f;
+    margin: .5rem !important;
+    width: 3.5rem !important;
+    height: 2.5rem !important;
+    text-align: center !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    border: 2px solid #fff55f !important;
 }
+
 
 
 
@@ -807,3 +813,136 @@ img.img-fluid.glimg {
     border-radius: 25px;
     font-weight: bold;
 }
+
+
+.login-div .container {
+    width: 40%;
+}
+
+.mbl-dvc {
+    position: relative;
+}
+
+.mbl-dvc img:last-child {
+    margin-left: -60px;
+    height: auto;
+    width: 220px;
+}
+
+.mbl-dvc img:first-child {
+    position: absolute;
+    height: 70px;
+    top: -15px;
+    width: 80%;
+    left: 40px;
+}
+
+.login-male {
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.website-tittle {
+    font-size: 2.5rem;
+}
+
+.breadcrumb {
+    background: #CE0E00;
+    border-radius: 0;
+    margin-bottom: 0 !important;
+}
+
+
+
+.breadcrumb .breadcrumb-item,
+.breadcrumb .breadcrumb-item a,
+.breadcrumb .breadcrumb-item .active {
+    color: white;
+
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-right: .5rem;
+    color: white;
+    content: ">";
+}
+
+/*  ==================loader CSS starts  ==============*/
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #CE0E00;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+/*  ==================loader CSS End  ==============*/

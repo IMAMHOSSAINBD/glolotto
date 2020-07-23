@@ -1,3 +1,46 @@
+/* ========================== */
+/* Responsive */
+/* ========================== */
+
+@media (max-width: 992px) {
+    .table-content {
+        width: 60%;
+
+    }
+}
+
+@media (max-width: 991.99px) {
+    .table-content {
+        width: 60%;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .table-content {
+        width: 70%;
+
+    }
+}
+
+@media (max-width: 767.99px) {
+    .table-content {
+        width: 70%;
+
+    }
+
+    .login-div .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .table-content {
+        width: 100%;
+
+    }
+}
+
 @media (max-width: 575.99px) {
     .section-2 select {
         width: 200px;
@@ -18,9 +61,55 @@
         font-size: 1rem;
     }
 
+    .lpnum .col-6 h5 {
+        font-size: 1rem;
+    }
+
+    nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+
+    }
+
+    .rightlinks {
+        margin: auto;
+    }
+
+    .lotrslt {
+        margin: .5rem;
+    }
+
+
+    .table th,
+    .table td {
+        padding: .2rem;
+    }
+
+    .table-content {
+        font-weight: normal;
+
+    }
+
+    .login-footer div {
+        padding: 0 !important;
+
+    }
+
+    .login-footer div button,
+    .login-footer div a {
+        font-size: .8rem !important;
+    }
+
+    .website-tittle {
+        font-size: 1.2rem;
+    }
 
 
 }
+
+
 
 @media only screen and (max-width: 414px) {
     nav.navbar.navbar-expand-bg.navbar-dark.danger-deep.sticky-top {
@@ -64,81 +153,6 @@
     }
 }
 
-
-
-/* ========================== */
-/* Responsive */
-/* ========================== */
-
-@media (max-width: 992px) {
-    .table-content {
-        width: 60%;
-
-    }
-}
-
-@media (max-width: 991.99px) {
-    .table-content {
-        width: 60%;
-
-    }
-}
-
-@media (max-width: 768px) {
-    .table-content {
-        width: 70%;
-
-    }
-}
-
-@media (max-width: 767.99px) {
-    .table-content {
-        width: 70%;
-
-    }
-}
-
-@media (max-width: 576px) {
-    .table-content {
-        width: 100%;
-
-    }
-}
-
-@media (max-width: 575.99px) {
-    nav {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-
-    }
-
-    .rightlinks {
-        margin: auto;
-    }
-
-    .lotrslt {
-        margin: .5rem;
-    }
-
-
-    .table th,
-    .table td {
-        padding: .2rem;
-    }
-
-    .table-content {
-        font-weight: normal;
-
-    }
-
-    /*
-    span.gennum {
-        
-    }
-*/
-}
 
 @media (max-width: 320px) {
     .table-content {

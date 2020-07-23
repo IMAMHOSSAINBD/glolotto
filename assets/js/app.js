@@ -44,4 +44,48 @@ $(document).ready(function () {
     });
 
 
-})
+});
+
+
+
+//-- WOW JS intialize/
+new WOW().init();
+
+//        $('.marquee').marquee();
+// marquee
+$(function () {
+    $('.marquee').marquee({
+        duration: 9000
+    });
+});
+
+// Back to top JS -->
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+    $('#back-to-top').click(function () {
+        $('#back-to-top').tooltip('hide');
+        $('body,html').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
+
+    $('#back-to-top').tooltip('show');
+
+});
+
+// Chatbot hide JS -->
+function hideFunction() {
+    var x = document.getElementById("chatbot");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+};
