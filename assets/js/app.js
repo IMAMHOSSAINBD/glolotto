@@ -89,3 +89,26 @@ function hideFunction() {
         x.style.display = "none";
     }
 };
+
+// register choose
+function show(aval) {
+    if (aval == "0") { //if 1 then show it
+
+        thailandContend.style.display = 'block';
+        Form.fileURL.focus();
+    } else { //for everything else hide it
+
+        thailandContend.style.display = 'none';
+    }
+};
+
+
+// Chatbot hide JS -->
+function hideFunction() {
+    var x = document.getElementById("chatbot");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+};
